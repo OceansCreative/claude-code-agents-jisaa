@@ -1,7 +1,8 @@
 # Claude Code Agents for Jisaa (士業)
 
+[![Status: Beta](https://img.shields.io/badge/status-beta-orange.svg)](#-ステータスbeta実務での独立検証-未完了)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![Release](https://img.shields.io/github/v/release/OceansCreative/claude-code-agents-jisaa)](https://github.com/OceansCreative/claude-code-agents-jisaa/releases)
+[![Release](https://img.shields.io/github/v/release/OceansCreative/claude-code-agents-jisaa?include_prereleases)](https://github.com/OceansCreative/claude-code-agents-jisaa/releases)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 [![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./CODE_OF_CONDUCT.md)
 
@@ -9,6 +10,22 @@
 > 業際遵守・期限管理・顧客コミュニケーションを AI で加速する。
 
 [English version below](#english)
+
+---
+
+## ⚠️ ステータス：Beta（実務での独立検証 未完了）
+
+**本パックは Beta 段階です。実務に投入する前に、以下が未完了であることを必ずご認識ください。**
+
+- 🔍 引用法令条文（弁護士法 72 条、税理士法 52 条 等）の **現役の士業・弁護士による独立校正は行っていません**
+- 🧪 **現役の 行政書士 / 税理士 / 社労士 による実案件運用テストは未実施**です
+- 📊 各エージェントが業際・倫理規程に違反する出力をしないことの **体系的な検証は未完了**です
+
+「設計ドラフト + OSS 配布体裁完備」の段階とご理解ください。エージェントの判断・出力をそのまま実務に採用せず、**最終判断は必ずご自身の責任で**行ってください。本パックの利用に起因する一切の不利益について、メンテナは責任を負いません。
+
+**Stable (v1.0 GA) リリースの条件**：①法令引用の士業／弁護士校正 ②現役士業 3〜5 名のドッグフードと反映 ③司法書士・弁理士 example の追加 ④法改正運用ポリシーの明文化 — の 4 点が完了次第。
+
+実案件・検証での所見は [Issues](https://github.com/OceansCreative/claude-code-agents-jisaa/issues/new/choose) または [Discussions](https://github.com/OceansCreative/claude-code-agents-jisaa/discussions) に大歓迎です。
 
 ---
 
@@ -117,6 +134,20 @@ MIT License - [LICENSE](./LICENSE) を参照。
 # Claude Code Agents for Jisaa (English)
 
 > A specialized agent pack for solo practitioners of Japanese licensed professional services — gyosei-shoshi (administrative scriveners), zeirishi (tax accountants), sharoshi (labor & social security consultants), shiho-shoshi (judicial scriveners), benrishi (patent attorneys).
+
+## ⚠️ Status: Beta (Not Independently Verified for Production Use)
+
+**This pack is in Beta. Before using it in actual practice, be aware that the following have NOT been completed:**
+
+- 🔍 **Independent legal review** of cited statutes (e.g., 弁護士法 72 条, 税理士法 52 条) by a practicing 士業 or 弁護士
+- 🧪 **Real-case operational testing** by practicing administrative scriveners, tax accountants, or labor consultants
+- 📊 **Systematic evaluation** of whether agent outputs respect cross-license boundaries and ethics rules
+
+Treat this as "design draft + OSS distribution scaffolding ready," not production-grade tooling. Do not adopt agent outputs directly in practice; **final judgment is your sole responsibility**. The maintainer assumes no liability for any consequences of using this pack.
+
+**Conditions for Stable (v1.0 GA) release**: (1) practitioner/lawyer review of cited statutes, (2) dogfooding by 3–5 active practitioners with feedback applied, (3) addition of shiho-shoshi and benrishi examples, (4) documented policy for handling legal amendments.
+
+Field reports from real-case use are very welcome via [Issues](https://github.com/OceansCreative/claude-code-agents-jisaa/issues/new/choose) or [Discussions](https://github.com/OceansCreative/claude-code-agents-jisaa/discussions).
 
 ## Seven Specialized Agents
 

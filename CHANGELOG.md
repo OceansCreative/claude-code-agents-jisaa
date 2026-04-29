@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- **ステータス再分類**: 本パックを **Beta** として明示（README に Beta バッジと警告バナーを追加）。
+  v1.0.0 / v1.1.0 リリースも GitHub 上で pre-release としてフラグ。
+  Stable (v1.0 GA) は「法令引用の士業／弁護士校正」「現役士業 3〜5 名のドッグフード反映」
+  「司法書士・弁理士 example の追加」「法改正運用ポリシーの明文化」が完了次第リリース予定。
+
 ## [1.1.0] - 2026-04-29
 
 ### Added
