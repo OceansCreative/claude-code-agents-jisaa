@@ -1,0 +1,59 @@
+name: ✨ Feature Request / 機能要望
+description: 新エージェント・新機能・既存エージェントの改善提案 / Propose new agents, features, or improvements
+title: "[Feature] "
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        提案ありがとうございます。**大きな変更を計画している場合は、PR 前に必ずこの Issue で方針を相談してください**（業際遵守・守秘義務の設計方針があるため）。
+        For substantial changes, please discuss direction here before opening a PR.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 解決したい課題 / Problem
+      description: 現状で何が不便か / What's currently inconvenient?
+      placeholder: 例：申請書ドラフト時に、添付書類のチェックリスト生成が手動になっている
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: 提案する解決策 / Proposed Solution
+      description: 新エージェント？既存エージェントへの追加？examples の追加？
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 検討した代替案 / Alternatives Considered
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: 影響範囲 / Scope
+      options:
+        - 新エージェント追加 / New agent
+        - 既存エージェントの改善 / Improve existing agent
+        - 新業種 example 追加 / New profession example
+        - ドキュメント / Documentation
+        - その他 / Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: regulatory
+    attributes:
+      label: 業際・規制への配慮 / Regulatory Consideration
+      description: 提案が士業の独占業務・広告規制等に抵触しないか、簡単に整理してください
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: 確認事項 / Checklist
+      options:
+        - label: 既存の Issue を検索し、重複がないことを確認した / I searched for existing issues
+          required: true

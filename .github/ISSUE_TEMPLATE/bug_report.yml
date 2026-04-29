@@ -1,0 +1,75 @@
+name: 🐛 Bug Report / バグ報告
+description: エージェント定義・examples・ドキュメントの不具合を報告 / Report a bug in agent definitions, examples, or docs
+title: "[Bug] "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        バグ報告ありがとうございます。再現可能な情報をできるだけ詳しくご記載ください。
+        Thanks for reporting a bug. Please provide as much reproducible detail as possible.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 概要 / Summary
+      description: 何が起きていますか？ / What's happening?
+      placeholder: 例：compliance-officer が紛争性ある事案でも代理交渉を勧めてしまう
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 再現手順 / Steps to Reproduce
+      description: |
+        どの CLAUDE.md / どのエージェント / どのプロンプトで発生したか
+        Which CLAUDE.md, which agent, what prompt
+      placeholder: |
+        1. examples/gyosei-shoshi/CLAUDE.md をコピー
+        2. @compliance-officer に「...」と質問
+        3. 期待外の出力
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待される挙動 / Expected Behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際の挙動 / Actual Behavior
+    validations:
+      required: true
+
+  - type: input
+    id: claude-code-version
+    attributes:
+      label: Claude Code バージョン / Claude Code Version
+      placeholder: "例: 1.x.x（claude --version で確認）"
+
+  - type: input
+    id: pack-version
+    attributes:
+      label: 本パックのバージョン / This Pack's Version
+      placeholder: "例: v1.1.0 / commit hash"
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: その他 / Additional Context
+      description: スクリーンショット・関連 issue 等。**実在の顧客名・案件名は絶対に含めないでください。**
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: 確認事項 / Checklist
+      options:
+        - label: 既存の Issue を検索し、重複がないことを確認した / I searched for existing issues
+          required: true
+        - label: 報告内容に実在の個人情報・機密情報が含まれていないことを確認した / No real PII or confidential info is included
+          required: true

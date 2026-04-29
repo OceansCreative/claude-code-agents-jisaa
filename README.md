@@ -1,5 +1,10 @@
 # Claude Code Agents for Jisaa (士業)
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Release](https://img.shields.io/github/v/release/OceansCreative/claude-code-agents-jisaa)](https://github.com/OceansCreative/claude-code-agents-jisaa/releases)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
+[![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./CODE_OF_CONDUCT.md)
+
 > 行政書士・税理士・社労士・司法書士・弁理士など、士業の一人事務所向け Claude Code サブエージェント集。
 > 業際遵守・期限管理・顧客コミュニケーションを AI で加速する。
 
@@ -84,11 +89,19 @@ cp claude-code-agents-jisaa/CLAUDE.md.template ./CLAUDE.md
 - 法改正・通達変更により、エージェントの提案が古くなる可能性があります
 - 利益相反・受任可否の最終確認は必ず人間（自分）が行ってください
 
+## 🤝 コントリビュート
+
+改善案・プルリクエスト歓迎です。出す前に [CONTRIBUTING.md](./CONTRIBUTING.md) と [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) をご確認ください。新業種の example 追加（司法書士・弁理士・海事代理士など）は特に歓迎です。
+
+- 🐛 バグ報告: [Issues](https://github.com/OceansCreative/claude-code-agents-jisaa/issues/new/choose)
+- 🔒 脆弱性報告: [SECURITY.md](./SECURITY.md)
+- 📜 変更履歴: [CHANGELOG.md](./CHANGELOG.md)
+
 ## 📜 ライセンス
 
 MIT License - [LICENSE](./LICENSE) を参照。
 
-自由に fork ・改変・商用利用してください。改善案やプルリクエスト歓迎です。
+自由に fork ・改変・商用利用してください。
 
 ## 🙋 つくったひと
 

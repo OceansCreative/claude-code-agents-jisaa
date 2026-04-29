@@ -1,0 +1,53 @@
+name: 📋 New Profession Example / 新業種 example の追加リクエスト
+description: 司法書士・弁理士・海事代理士など、新業種の example 追加を提案
+title: "[Example] Add: "
+labels: ["example", "good-first-issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        新業種の example 追加は特に歓迎します。自身で PR を出していただける場合も、提案だけでも歓迎です。
+
+  - type: input
+    id: profession
+    attributes:
+      label: 業種 / Profession
+      placeholder: "例: 司法書士 (shiho-shoshi) / 弁理士 (benrishi)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: 独占業務の範囲 / Exclusive Scope
+      description: その業種の独占業務範囲を簡潔に
+    validations:
+      required: true
+
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: 隣接業種との業際境界 / Cross-License Boundaries
+      description: 行政書士・税理士・社労士等との業際で気をつけるべきポイント
+
+  - type: textarea
+    id: deadlines
+    attributes:
+      label: 業種特有の重要期限 / Profession-Specific Deadlines
+      description: 例：登記の即時性、特許出願期限、時効 等
+
+  - type: textarea
+    id: regulations
+    attributes:
+      label: 業種特有の規制 / Profession-Specific Regulations
+      description: 広告規制、報酬規程、職務上請求の制限 等
+
+  - type: dropdown
+    id: willing-to-pr
+    attributes:
+      label: 自身で PR を出せますか？ / Will you submit a PR?
+      options:
+        - はい / Yes
+        - いいえ、提案のみ / No, just proposing
+    validations:
+      required: true

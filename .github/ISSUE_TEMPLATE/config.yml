@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🔒 セキュリティ脆弱性の報告 / Report a Security Vulnerability
+    url: https://github.com/OceansCreative/claude-code-agents-jisaa/security/policy
+    about: 公開 Issue ではなく SECURITY.md の手順に従い非公開で報告してください / Use private channels per SECURITY.md, not public issues
+  - name: 💬 質問・ディスカッション / Questions & Discussion
+    url: https://github.com/OceansCreative/claude-code-agents-jisaa/discussions
+    about: 使い方の質問・アイデア相談は Discussions へ / Use Discussions for usage questions and idea sharing
